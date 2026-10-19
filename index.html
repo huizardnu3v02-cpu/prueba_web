@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hoja de Vida | jeffeson steven silva palomares - UNH</title>
+  <style>
+    :root {
+      --primary: #0f4c81;
+      --primary-light: #2563eb;
+      --text: #1f2937;
+      --text-muted: #4b5563;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --border: #e2e8f0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background-color: var(--bg);
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      padding: 2.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--border);
+    }
+
+    header {
+      border-bottom: 2px solid var(--primary-light);
+      padding-bottom: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      color: var(--primary);
+      margin-bottom: 0.25rem;
+    }
+
+    header p.subtitle {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      margin-bottom: 0.75rem;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem 1.5rem;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+
+    .contact-info a {
+      color: var(--primary-light);
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    section:last-child {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.35rem;
+      margin-bottom: 1rem;
+    }
+
+    .item {
+      margin-bottom: 1.25rem;
+    }
+
+    .item:last-child {
+      margin-bottom: 0;
+    }
+
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      margin-bottom: 0.2rem;
+    }
+
+    .item-title {
+      font-weight: 600;
+      font-size: 1.05rem;
+      color: var(--text);
+    }
+
+    .item-institution {
+      font-weight: 500;
+      color: var(--primary-light);
+    }
+
+    .item-date {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    ul.details {
+      margin-left: 1.2rem;
+      margin-top: 0.4rem;
+      color: var(--text-muted);
+    }
+
+    ul.details li {
+      margin-bottom: 0.3rem;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+
+    .skill-category {
+      background: var(--bg);
+      padding: 1rem;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+    }
+
+    .skill-category h3 {
+      font-size: 1rem;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .skill-category ul {
+      list-style-type: none;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+
+    .skill-category li {
+      margin-bottom: 0.25rem;
+    }
+
+    @media print {
+      body {
+        background: none;
+        padding: 0;
+      }
+      .container {
+        box-shadow: none;
+        border: none;
+        padding: 0;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Encabezado -->
+    <header>
+      <h1>jeffeson silva palomares</h1>
+      <p class="subtitle">Estudiante de Administración de Empresas | Universidad Nacional de Huancavelica</p>
+      <div class="contact-info">
+        <span>📍 Huancavelica, Perú</span>
+        <span>📧 <a href="mailto:tu-correo@unh.edu.pe">correo@unh.edu.pe</a></span>
+        <span>📱 +51 900 000 000</span>
+        <span>🔗 <a href="https://linkedin.com/in/tu-perfil" target="_blank">LinkedIn</a></span>
+        <span>💻 <a href="https://github.com/tu-usuario" target="_blank">GitHub</a></span>
+      </div>
+    </header>
+
+    <!-- Perfil Profesional -->
+    <section>
+      <h2>Perfil Profesional</h2>
+      <p>
+        Estudiante de los últimos ciclos de Administración de Empresas en la Universidad Nacional de Huancavelica (UNH). Interés y formación orientada a la gestión estratégica, administración pública regional, finanzas operativas y formulación de proyectos de inversión (Invierte.pe). Capacidad analítica en optimización de procesos, manejo de herramientas de analítica empresarial (Excel avanzado, Power BI) y trabajo colaborativo enfocado en resultados medibles.
+      </p>
+    </section>
+
+    <!-- Educación -->
+    <section>
+      <h2>Educación</h2>
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">Licenciatura en Ciencias Administrativas</span>
+          <span class="item-date">2022 - Presente</span>
+        </div>
+        <div class="item-institution">Universidad Nacional de Huancavelica (UNH) - Facultad de Ciencias Empresariales</div>
+        <ul class="details">
+          <li>Cursos clave: Planificación Estratégica, Finanzas Corporativas, Gestión Logística y de Abastecimiento, Administración Pública.</li>
+          <li>Perteneciente al tercio superior académico en asignaturas de análisis cuantitativo y gestión de operaciones.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Experiencia y Proyectos Académicos -->
+    <section>
+      <h2>Experiencia y Proyectos</h2>
+      
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">Practicante Pre-Profesional de Gestión Administrativa</span>
+          <span class="item-date">2025 - 2026</span>
+        </div>
+        <div class="item-institution">Empresa / Institución Local</div>
+        <ul class="details">
+          <li>Apoyo en el control de inventarios, registro de comprobantes y conciliaciones básicas de caja.</li>
+          <li>Digitalización y clasificación de expedientes administrativos y seguimiento a órdenes de compra.</li>
+          <li>Elaboración de reportes semanales de indicadores operativos para la jefatura de administración.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">Plan de Negocios y Estudio de Mercado para Emprendimiento Local</span>
+          <span class="item-date">2025</span>
+        </div>
+        <div class="item-institution">Proyecto Integrador UNH</div>
+        <ul class="details">
+          <li>Diseño de un modelo de negocio orientado al aprovechamiento de productos agropecuarios de la región Huancavelica.</li>
+          <li>Evaluación financiera completa: cálculo de flujo de caja proyectado, VAN, TIR y punto de equilibrio.</li>
+          <li>Estructuración de la cadena de suministro y estrategia de marketing mix local.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Competencias y Habilidades -->
+    <section>
+      <h2>Competencias</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Gestión Empresarial</h3>
+          <ul>
+            <li>Planificación estratégica</li>
+            <li>Evaluación de proyectos (VAN/TIR)</li>
+            <li>Control de costos y presupuestos</li>
+            <li>Sistemas de abastecimiento y compras</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Herramientas Digitales</h3>
+          <ul>
+            <li>Microsoft Excel (Tablas dinámicas, fórmulas avanzadas)</li>
+            <li>Power BI (Tableros de control y KPIs)</li>
+            <li>ERP / Software de gestión contable básico</li>
+            <li>Google Workspace y Suite Office</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Idiomas y Habilidades Blandas</h3>
+          <ul>
+            <li>Español (Nativo)</li>
+            <li>Quechua (Básico / Intermedio - comunicativo)</li>
+            <li>Inglés (Lectura técnica / Básico)</li>
+            <li>Liderazgo y negociación comercial</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+
+</body>
+</html>
